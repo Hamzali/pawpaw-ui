@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import './PetItem.css';
 
 const PetItem = (props) => {
-    return <div>
+    return <div className='pet-item'>
         <h3>{props.name}</h3>
-        <ul>
+        <hr/>
+        <ul className='pet-item-content'>
             <li>age: {props.age}</li>
             <li>color: {props.color}</li>
             <li>species: {props.species}</li>
